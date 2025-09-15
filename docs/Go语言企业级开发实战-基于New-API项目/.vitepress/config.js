@@ -17,7 +17,7 @@ export default withMermaid(
     // 导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: 'GitHub', link: 'https://github.com/songquanpeng/one-api' }
+      { text: 'GitHub', link: 'https://github.com/ljquan/new-api-book/tree/books' }
     ],
     
     // 侧边栏
@@ -105,7 +105,7 @@ export default withMermaid(
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/songquanpeng/one-api' }
+      { icon: 'github', link: 'https://github.com/ljquan/new-api-book/tree/books' }
     ],
     
     // 页脚
@@ -161,7 +161,7 @@ export default withMermaid(
   
   // 构建配置
   base: '/',
-  outDir: '../dist',
+  outDir: './dist',
   
   // 头部配置
   head: [
@@ -177,34 +177,38 @@ export default withMermaid(
     // 关于 mermaid 配置，参考 https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults
     theme: 'default',
     themeVariables: {
-      // 修复 mindmap 的颜色问题
+      // 基础颜色
       primaryColor: '#f9f9f9',
       primaryTextColor: '#333',
       primaryBorderColor: '#666',
       lineColor: '#666',
       
-      // mindmap 特定配置
-      mindmapLabelColor: '#333',
-      mindmapNodeColor: '#f9f9f9',
-      mindmapEdgeColor: '#666',
+      // mindmap 专用颜色配置
+      cScale0: '#ff7f7f',  // 根节点 - 红色
+      cScale1: '#ffa500',  // 一级节点 - 橙色  
+      cScale2: '#ffff00',  // 二级节点 - 黄色
+      cScale3: '#90ee90',  // 三级节点 - 浅绿色
+      cScale4: '#87ceeb',  // 四级节点 - 天蓝色
+      cScale5: '#dda0dd',  // 五级节点 - 紫色
+      cScale6: '#ffb6c1',  // 六级节点 - 浅粉色
+      cScale7: '#20b2aa',  // 七级节点 - 浅蓝绿色
       
-      // 节点颜色
-      cScale0: '#f9f9f9',
-      cScale1: '#e1f5fe',
-      cScale2: '#b3e5fc',
-      cScale3: '#81d4fa',
-      cScale4: '#4fc3f7',
-      cScale5: '#29b6f6',
-      
-      // 文字颜色
+      // 文字和边框
       labelTextColor: '#333',
       nodeTextColor: '#333',
       
-      // 背景色
+      // 背景
       background: 'transparent',
-      mainBkg: '#f9f9f9',
-      secondBkg: '#e8f4f8',
-      tertiaryColor: '#f1f8e9'
+      mainBkg: '#ffffff',
+      secondBkg: '#f8f9fa',
+      tertiaryColor: '#f1f3f4'
+    },
+    // mindmap 特定配置
+    mindmap: {
+      useMaxWidth: true,
+      padding: 10,
+      maxNodeSizeX: 200,
+      maxNodeSizeY: 100
     }
   },
   
