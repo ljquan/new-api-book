@@ -1,6 +1,6 @@
 [build]
   base = "docs/Go语言企业级开发实战-基于New-API项目"
-  publish = "docs/Go语言企业级开发实战-基于New-API项目/dist"
+  publish = "dist"
   command = "npm install && npm run build"
 
 [build.environment]
