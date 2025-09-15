@@ -273,7 +273,7 @@ classDiagram
     class APIResponse {
         +bool success
         +string message
-        +interface{} data
+        +interface data
         +APIError error
         +Meta meta
         +int64 timestamp
@@ -295,7 +295,7 @@ classDiagram
     APIResponse --> APIError : "错误时包含"
     APIResponse --> Meta : "分页时包含"
     
-    note for APIResponse "成功响应：success=true, data有值\n失败响应：success=false, error有值"
+    note for APIResponse "成功响应：success=true, data有值\\n失败响应：success=false, error有值"
 ```
 
 图5：统一API响应结构设计

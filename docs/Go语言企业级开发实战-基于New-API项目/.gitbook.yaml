@@ -12,6 +12,7 @@ plugins:
   - sharing
   - fontsettings
   - highlight
+  - mermaid-gb3
 
 pluginsConfig:
   sharing:
