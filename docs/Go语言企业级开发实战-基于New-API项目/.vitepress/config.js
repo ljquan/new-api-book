@@ -17,7 +17,7 @@ export default withMermaid(
     // 导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: 'GitHub', link: 'https://github.com/ljquan/new-api-book/tree/books' }
+      { text: 'GitHub', link: 'https://github.com/ljquan/new-api-book/tree/books/docs/Go%E8%AF%AD%E8%A8%80%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E5%9F%BA%E4%BA%8ENew-API%E9%A1%B9%E7%9B%AE' }
     ],
     
     // 侧边栏
@@ -105,7 +105,7 @@ export default withMermaid(
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ljquan/new-api-book/tree/books' }
+      { icon: 'github', link: 'https://github.com/ljquan/new-api-book/tree/books/docs/Go%E8%AF%AD%E8%A8%80%E4%BC%81%E4%B8%9A%E7%BA%A7%E5%BC%80%E5%8F%91%E5%AE%9E%E6%88%98-%E5%9F%BA%E4%BA%8ENew-API%E9%A1%B9%E7%9B%AE' }
     ],
     
     // 页脚
