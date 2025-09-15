@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3b73"/>
+      <stop offset="50%" stop-color="#29539b"/>
+      <stop offset="100%" stop-color="#4b79cf"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6ee7f9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#a7f3d0" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#g)"/>
+
+  <!-- Abstract shapes -->
+  <circle cx="350" cy="220" r="180" fill="url(#glow)" filter="url(#soft)"/>
+  <circle cx="1320" cy="720" r="220" fill="url(#glow)" filter="url(#soft)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="2">
+    <path d="M100 640 C 400 520, 700 780, 1000 660 S 1500 520, 1580 640"/>
+    <path d="M80 720 C 420 620, 680 860, 1020 760 S 1480 600, 1560 700"/>
+  </g>
+
+  <!-- Title -->
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, Source Han Sans SC, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" fill="#ffffff">
+    <text x="120" y="360" font-size="82" font-weight="700">Go语言企业级开发实战</text>
+    <text x="120" y="440" font-size="56" opacity="0.95">基于 New-API 项目</text>
+
+    <text x="120" y="520" font-size="28" opacity="0.9">开源书籍 · GitBook 发布 · CC BY 4.0</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(120, 580)">
+    <rect rx="10" ry="10" width="430" height="56" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.28)"/>
+    <text x="24" y="38" font-size="24" fill="#e7f0ff" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif">版本 v1.0 · 2025</text>
+  </g>
+
+  <!-- Corner mark -->
+  <g transform="translate(1520, 70) rotate(45)">
+    <rect x="-120" y="-18" width="240" height="36" fill="rgba(255,255,255,0.16)"/>
+  </g>
+</svg>
+
