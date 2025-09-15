@@ -1,0 +1,18 @@
+{
+  "name": "go-enterprise-development-guide",
+  "version": "1.0.0",
+  "description": "Go语言企业级开发实战 - 基于New-API项目",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  },
+  "dependencies": {
+    "mermaid": "^11.11.0",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}

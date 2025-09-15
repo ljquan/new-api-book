@@ -12,3 +12,7 @@ one-api
 .DS_Store
 tiktoken_cache
 .eslintcache
+node_modules
+dist
+.vitepress/cache/
+docs/Go语言企业级开发实战-基于New-API项目/.vitepress/cache

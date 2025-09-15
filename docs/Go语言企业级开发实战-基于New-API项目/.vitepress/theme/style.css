@@ -1,0 +1,175 @@
+/* 自定义样式 */
+
+/* Mermaid 图表样式 */
+.mermaid-container {
+  margin: 20px 0;
+  text-align: center;
+  background: #fafafa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-error {
+  background: #ffeaea;
+  border: 1px solid #ff6b6b;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 16px 0;
+}
+
+/* 深色模式下的 Mermaid 样式 */
+.dark .mermaid-container {
+  background: #1e1e20;
+  border-color: #2e2e32;
+}
+
+/* Mindmap 特定样式修复 */
+.mermaid .mindmap-node {
+  fill: #f9f9f9 !important;
+  stroke: #666 !important;
+  stroke-width: 2px !important;
+}
+
+.mermaid .mindmap-node text {
+  fill: #333 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.mermaid .mindmap-edge {
+  stroke: #666 !important;
+  stroke-width: 2px !important;
+}
+
+/* 针对不同层级的节点颜色 */
+.mermaid .mindmap-node.level-0 {
+  fill: #e3f2fd !important;
+}
+
+.mermaid .mindmap-node.level-1 {
+  fill: #bbdefb !important;
+}
+
+.mermaid .mindmap-node.level-2 {
+  fill: #90caf9 !important;
+}
+
+.mermaid .mindmap-node.level-3 {
+  fill: #64b5f6 !important;
+}
+
+/* 确保文字可见性 */
+.mermaid .nodeLabel {
+  color: #333 !important;
+  fill: #333 !important;
+  font-size: 14px !important;
+}
+
+/* 深色模式下的 mindmap 样式 */
+.dark .mermaid .mindmap-node {
+  fill: #374151 !important;
+  stroke: #9ca3af !important;
+}
+
+.dark .mermaid .mindmap-node text,
+.dark .mermaid .nodeLabel {
+  fill: #f3f4f6 !important;
+  color: #f3f4f6 !important;
+}
+
+.dark .mermaid .mindmap-edge {
+  stroke: #9ca3af !important;
+}
+
+/* 代码块样式优化 */
+.vp-code-group {
+  margin: 16px 0;
+}
+
+/* 导航样式优化 */
+.VPSidebar {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 transparent;
+}
+
+.VPSidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.VPSidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.VPSidebar::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 3px;
+}
+
+/* 搜索结果样式 */
+.VPLocalSearch .result {
+  border-radius: 8px;
+}
+
+/* 响应式图片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px 0;
+}
+
+/* 表格样式 */
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  table {
+    display: table;
+    white-space: normal;
+  }
+}
+
+/* 引用块样式 */
+blockquote {
+  border-left: 4px solid #42b883;
+  padding-left: 16px;
+  margin: 16px 0;
+  background: #f9f9f9;
+  border-radius: 0 4px 4px 0;
+}
+
+.dark blockquote {
+  background: #1e1e20;
+  border-left-color: #42b883;
+}
+
+/* 警告框样式 */
+.custom-block.tip {
+  background-color: #f3f5f7;
+  border-color: #42b883;
+}
+
+.custom-block.warning {
+  background-color: #fdf6ec;
+  border-color: #e7c000;
+}
+
+.custom-block.danger {
+  background-color: #fef0f0;
+  border-color: #f56565;
+}
