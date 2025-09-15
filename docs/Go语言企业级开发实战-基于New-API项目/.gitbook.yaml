@@ -1,0 +1,47 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+format: markdown
+
+plugins:
+  - theme-default
+  - search
+  - sharing
+  - fontsettings
+  - highlight
+
+pluginsConfig:
+  sharing:
+    facebook: false
+    twitter: false
+    google: false
+    weibo: false
+    instapaper: false
+    vk: false
+    all:
+      - facebook
+      - google
+      - twitter
+      - weibo
+      - instapaper
+
+title: "Go语言企业级开发实战 - 基于New-API项目"
+description: "一本深入浅出的Go语言企业级开发实战教程，基于真实的New-API开源项目"
+author: "作者姓名"
+language: "zh-hans"
+
+pdf:
+  pageNumbers: true
+  fontSize: 12
+  fontFamily: "Arial"
+  paperSize: "a4"
+  chapterMark: "pagebreak"
+  pageBreaksBefore: "/"
+  margin:
+    right: 62
+    left: 62
+    top: 56
+    bottom: 56

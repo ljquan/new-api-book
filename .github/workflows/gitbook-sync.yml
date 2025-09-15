@@ -1,0 +1,56 @@
+name: GitBook Sync
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/Go语言企业级开发实战-基于New-API项目/**'
+      - '.gitbook.yaml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'docs/Go语言企业级开发实战-基于New-API项目/**'
+      - '.gitbook.yaml'
+
+jobs:
+  sync-gitbook:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install GitBook CLI
+      run: |
+        npm install -g gitbook-cli
+        gitbook install
+        
+    - name: Build GitBook
+      run: |
+        cd docs/Go语言企业级开发实战-基于New-API项目
+        gitbook build . _book
+        
+    - name: Deploy to GitBook
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      env:
+        GITBOOK_TOKEN: ${{ secrets.GITBOOK_TOKEN }}
+        GITBOOK_SPACE_ID: ${{ secrets.GITBOOK_SPACE_ID }}
+      run: |
+        # 使用 GitBook API 同步内容
+        echo "Syncing to GitBook..."
+        # 这里需要根据实际的 GitBook API 进行配置
+        
+    - name: Notify on success
+      if: success()
+      run: echo "GitBook sync completed successfully!"
+      
+    - name: Notify on failure
+      if: failure()
+      run: echo "GitBook sync failed!"

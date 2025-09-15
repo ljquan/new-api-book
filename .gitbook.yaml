@@ -1,0 +1,29 @@
+root: docs/Go语言企业级开发实战-基于New-API项目
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+format: markdown
+
+plugins:
+  - theme-default
+  - search
+  - sharing
+  - fontsettings
+  - highlight
+
+pluginsConfig:
+  sharing:
+    facebook: false
+    twitter: false
+    google: false
+    weibo: false
+    instapaper: false
+    vk: false
+    all:
+      - facebook
+      - google
+      - twitter
+      - weibo
+      - instapaper
